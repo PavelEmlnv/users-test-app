@@ -1,0 +1,58 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 0;
+
+  .pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+
+      &:visited {
+        color: #000000;
+      }
+    }
+
+    .page-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      min-width: 40px;
+      max-width: 40px;
+      height: 40px;
+      margin-right: 12px;
+      border-radius: 8px;
+      background-color: #ffffff;
+      
+      &.active {
+        p { 
+          color: #17a2b8;
+        }
+      }
+
+      p {
+        color: #000000;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+      }
+    }
+  }
+
+  img {
+    cursor: pointer;
+
+    &:first-of-type {
+      margin-right: 24px;
+    }
+
+    &:last-of-type {
+      margin-left: 24px;
+    }
+  }
+}

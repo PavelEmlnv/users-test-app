@@ -1,0 +1,20 @@
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  border-radius: 64px;
+  padding: 12px;
+  background-color: #17a2b8;
+  font-size: 12px;
+  font-weight: 600;
+  transition: .2s ease background-color;
+
+  &:hover {
+    background-color: lighten($color: #17a2b8, $amount: 5%);
+  }
+
+  &:disabled {
+    background-color: #acc9ce;
+  }
+}

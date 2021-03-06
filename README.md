@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+## Node Version
+
+You need to use node version 14.13.0
+
 ### `yarn start`
 
 Runs the app in the development mode.\

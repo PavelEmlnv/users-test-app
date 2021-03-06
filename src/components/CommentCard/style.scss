@@ -1,0 +1,22 @@
+.comment-card {
+  .name {
+    font-weight: 600;
+  }
+
+  .comment-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .email {
+      color: #acc9ce;
+      font-size: 12px;
+    }
+
+    .date {
+      text-align: right;
+      color: #acc9ce;
+      font-size: 12px;
+    }
+  }
+}

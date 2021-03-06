@@ -1,0 +1,60 @@
+.user-card {
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    opacity: 0;
+    transition: .2s ease opacity;
+  }
+
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .user-image {
+    margin-right: 12px;
+
+    img {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  .user-info {
+    width: 100%;
+
+    .name-and-gender, .email-and-status {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        margin: 12px 0;
+      }
+
+      .gender, .status {
+        color: #b4b4b4;
+      }
+    }
+
+    .email-and-status {
+      margin-bottom: 12px;
+    }
+  }
+}
